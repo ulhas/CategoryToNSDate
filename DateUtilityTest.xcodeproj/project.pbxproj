@@ -13,6 +13,7 @@
 		504FCAB715FDFE72009E4BD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 504FCAB515FDFE72009E4BD4 /* InfoPlist.strings */; };
 		504FCAB915FDFE72009E4BD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 504FCAB815FDFE72009E4BD4 /* main.m */; };
 		504FCABD15FDFE72009E4BD4 /* UMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 504FCABC15FDFE72009E4BD4 /* UMAppDelegate.m */; };
+		504FCAC615FDFE9B009E4BD4 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 504FCAC515FDFE9B009E4BD4 /* NSDate+Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		504FCAAC15FDFE72009E4BD4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		504FCAAE15FDFE72009E4BD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		504FCAB015FDFE72009E4BD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		504FCAB415FDFE72009E4BD4 /* DateUtilityTest-Info.plist */ = {isa = PBXFileReference; path = "DateUtilityTest-Info.plist"; sourceTree = "<group>"; };
+		504FCAB415FDFE72009E4BD4 /* DateUtilityTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateUtilityTest-Info.plist"; sourceTree = "<group>"; };
 		504FCAB615FDFE72009E4BD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		504FCAB815FDFE72009E4BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		504FCABA15FDFE72009E4BD4 /* DateUtilityTest-Prefix.pch */ = {isa = PBXFileReference; path = "DateUtilityTest-Prefix.pch"; sourceTree = "<group>"; };
-		504FCABB15FDFE72009E4BD4 /* UMAppDelegate.h */ = {isa = PBXFileReference; path = UMAppDelegate.h; sourceTree = "<group>"; };
+		504FCABA15FDFE72009E4BD4 /* DateUtilityTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DateUtilityTest-Prefix.pch"; sourceTree = "<group>"; };
+		504FCABB15FDFE72009E4BD4 /* UMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMAppDelegate.h; sourceTree = "<group>"; };
 		504FCABC15FDFE72009E4BD4 /* UMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMAppDelegate.m; sourceTree = "<group>"; };
+		504FCAC415FDFE9B009E4BD4 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		504FCAC515FDFE9B009E4BD4 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 		504FCAB215FDFE72009E4BD4 /* DateUtilityTest */ = {
 			isa = PBXGroup;
 			children = (
+				504FCAC315FDFE9B009E4BD4 /* NSDate + Utility */,
 				504FCABB15FDFE72009E4BD4 /* UMAppDelegate.h */,
 				504FCABC15FDFE72009E4BD4 /* UMAppDelegate.m */,
 				504FCAB315FDFE72009E4BD4 /* Supporting Files */,
@@ -88,6 +92,15 @@
 				504FCABA15FDFE72009E4BD4 /* DateUtilityTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		504FCAC315FDFE9B009E4BD4 /* NSDate + Utility */ = {
+			isa = PBXGroup;
+			children = (
+				504FCAC415FDFE9B009E4BD4 /* NSDate+Utility.h */,
+				504FCAC515FDFE9B009E4BD4 /* NSDate+Utility.m */,
+			);
+			path = "NSDate + Utility";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			files = (
 				504FCAB915FDFE72009E4BD4 /* main.m in Sources */,
 				504FCABD15FDFE72009E4BD4 /* UMAppDelegate.m in Sources */,
+				504FCAC615FDFE9B009E4BD4 /* NSDate+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

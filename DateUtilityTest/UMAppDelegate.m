@@ -7,6 +7,13 @@
 //
 
 #import "UMAppDelegate.h"
+#import "NSDate+Utility.h"
+
+@interface UMAppDelegate ()
+
+- (void)testDateUtility;
+
+@end
 
 @implementation UMAppDelegate
 
@@ -24,6 +31,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self testDateUtility];
     return YES;
 }
 
@@ -64,6 +72,39 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+#pragma mark - Misc Methods
+
+- (void)testDateUtility
+{
+    NSDate *_date = [NSDate date];
+    
+    NSLog(@"Previous Date : %@", _date.previousDay);
+    NSLog(@"Next Day : %@", _date.nextDay);
+    NSLog(@"Month Prior : %@", _date.aMonthPriorDate);
+    NSLog(@"Seven Days Prior Date : %@", _date.sevenDaysPriorDate);
+    
+    NSLog(@"String Value : %@", _date.stringValue);
+    NSLog(@"API String Value : %@", _date.apiStringValue);
+    NSLog(@"Long String Value : %@", _date.longStringValue);
+    NSLog(@"Short Date String Value : %@", _date.shortDateStringValue);
+    NSLog(@"Short Mid String Value : %@", _date.shortMidStringValue);
+    NSLog(@"Short Time Value : %@", _date.shortTimeStringValue);
+    
+    NSLog(@"Is Current Day : %d", _date.currentDate);
+    
+    NSDate *_date2 = [NSDate dateFromDate:@"09/10/2012"];
+    NSLog(@"String Value for Date2 : %@", _date2.stringValue);
+    
+    NSDate *_date3 = [NSDate dateFromString:@"09/10/2012 13:00:00"];
+    NSLog(@"Long String Value for Date3 : %@", _date3.longStringValue);
+    
+    NSDate *_date4 = [NSDate dateFromTimeString:@"8:00 PM"];
+    NSLog(@"Long string Value for Date4 : %@", _date4.longStringValue);
+    
+    NSDate *_date5 = [NSDate dateWithCurrentTime];
+    NSLog(@"Long String Value for Date5: %@", _date5.longStringValue);
 }
 
 @end
